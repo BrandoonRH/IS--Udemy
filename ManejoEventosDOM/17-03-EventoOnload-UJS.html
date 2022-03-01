@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body onload="entrar()">
+    /*
+    El Evento onload 
+    El evento onLoad se ejecuta cuando cargamos una página en el navegador. 
+    El evento onload de Javascript se activa cuando se termina de cargar la página.
+     Se ha de colocar en la etiqueta, aunque en versiones modernas de Javascript,
+          también lo aceptan otros elementos como las imágenes.
+    Con el evento onload podemos ejecutar acciones justo cuando se han terminado de cargar
+     todos los elementos de la página. Es un evento bastante utilizado pues es muy habitual 
+     que se deseen llevar a cabo acciones en ese preciso instante.
+    */
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <br/>
+    <div id="mostrar"></div>
+    <script>
+        function entrar(){
+            alert('Entrando a la página web');
+            let texto = '';
+            if(navigator.cookieEnabled){
+                texto = 'Cookies están habilitadas';
+            }
+            else{
+                texto = 'Cookies están inhabilitadas';
+            }
+            document.getElementById('mostrar').innerHTML = texto;
+        }
+    </script>
+</body>
+</html>

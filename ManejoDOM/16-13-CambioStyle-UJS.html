@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+</head>
+<body>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <button onclick="CambiarColorRed()">Rojo</button>
+    <button onclick="CambiarColorBlue()">Azul</button>
+    <button onclick="CambiarColorGreen()">Verde</button>
+    <br/>
+    <script>
+        function CambiarColorRed(){
+           document.getElementById('titulo').style.color = 'red'; 
+       } 
+       function CambiarColorBlue(){
+           document.getElementById('titulo').style.color = 'blue'; 
+       } 
+       function CambiarColorGreen(){
+           document.getElementById('titulo').style.color = 'green'; 
+       } 
+    </script>
+</body>
+</html>
